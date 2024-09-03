@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora - Practica Uno</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Incluir jQuery desde un CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header class="encabezado">
+            <div class="titulo custom-title">
+                <h1>PRÁCTICA 1. CÁLCULADORA BÁSICA</h1>
+            </div>
+        </header>
+        <div class="form-container">
+            <h2>CÁLCULADORA</h2>
+            <form id="calculadora">
+                <div class="form-group">
+                    <label for="num_uno">Número uno:</label>
+                    <input type="number" id="num_uno" name="num_uno" required>
+                </div>
+                <div class="form-group">
+                    <label for="num_dos">Número dos:</label>
+                    <input type="number" id="num_dos" name="num_dos" required>
+                </div>
+                <div class="form-group">
+                    <label for="opciones">Operación:</label>
+                    <div class="input-group">
+                        <select name="opciones" id="miComboBox">
+                            <option value="" selected disabled>Seleccione una opción</option>
+                            <option value="suma">Suma</option>
+                            <option value="resta">Resta</option>
+                            <option value="multiplicacion">Multiplicación</option>
+                            <option value="division">División</option>
+                        </select>
+                        <button type="submit">Ejecutar</button>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="resultado">Resultado</label>
+                    <input type="number" class="form-control" id="resultado" readonly />
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- Script de jQuery -->
+    <script src="funcionalidad.js"></script>
+</body>
+
+</html>
